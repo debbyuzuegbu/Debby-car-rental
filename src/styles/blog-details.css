@@ -10,7 +10,7 @@ blockquote {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 2px solid #000d6b;
+  border: 2px solid #046b00d0;
   object-fit: cover;
 }
 
@@ -19,7 +19,7 @@ blockquote {
 }
 
 .replay {
-  color: #000d6b;
+  color: #046b00d0;
   font-weight: 600;
   cursor: pointer;
 }
@@ -34,13 +34,13 @@ blockquote {
 }
 
 .comment__btn {
-  background: #000d6b !important;
+  background: #046b00d0 !important;
   color: #fff !important;
 }
 
 .recent__blog-item h6 a {
   text-decoration: none;
-  color: #000d6b;
+  color: #046b00d0;
   font-weight: 600;
 }
 
