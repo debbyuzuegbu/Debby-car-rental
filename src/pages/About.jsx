@@ -28,21 +28,22 @@ const About = () => {
             <Col lg="6" md="6" sm="12">
               <div className="about__page-content">
                 <h2 className="section__title">
-                  We Are Committed To Provide Safe Ride Solutions
+                  We are here to give you a great ride
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                  we specialize in Car Leasing & Logistics, Fleet Management,
+                  Car sales, Drivers Outsourcing and Security Services. We have
+                  a well-structured fleet management solution with affordable
+                  price rates for our car leasing services to meet the diverse
+                  needs of our clients.
                 </p>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                  We wish to have you as a client as we guarantee you a first
+                  (1st) experience by providing the best types of Standard,
+                  Executive, Exotic and Luxury cars in addition with
+                  well-trained professional drivers.
                 </p>
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
@@ -52,7 +53,7 @@ const About = () => {
 
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+00123456789</h4>
+                    <h4>+234-9133098749</h4>
                   </div>
                 </div>
               </div>
