@@ -1,5 +1,5 @@
 .find__cars-left {
-  background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
+  background: linear-gradient(rgba(16, 136, 24, 0.9), rgba(34, 136, 58, 0.9)),
     url("../assets/all-images/toyota-offer-2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 .find__cars-left h2 {
   font-weight: 600;
   font-size: 2.8rem;
+  color: #fff;
 }
 
 .form__group {
