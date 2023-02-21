@@ -57,17 +57,24 @@
 
 .newsletter input {
   background: transparent;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.614);
   border: none;
   outline: none;
 }
+.newsletter ::placeholder {
+  color: rgba(255, 255, 255, 0.614);
+}
 
 .newsletter span i {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.614);
 }
 
 .footer__bottom {
   border-top: 1px solid #7c8a972f;
+}
+
+.section__description {
+  color: rgba(255, 255, 255, 0.614);
 }
 
 .footer__bottom p {
