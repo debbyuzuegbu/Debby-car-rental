@@ -8,17 +8,17 @@ import ava03 from "../../assets/all-images/ava-3.jpg";
 
 const OUR__MEMBERS = [
   {
-    name: "Jhon Doe",
+    name: "Deborah Uzuegbu",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/deborah-chinyere-uzuegbu/",
     imgUrl: ava01,
   },
 
   {
-    name: "David Lisa",
+    name: "Kelvin Moses",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -28,7 +28,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Hilton King",
+    name: "Durotolu Olokode",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
@@ -38,7 +38,7 @@ const OUR__MEMBERS = [
   },
 
   {
-    name: "Jhon Doe",
+    name: "Raphel Laurel",
     experience: "5 years of experience",
     fbUrl: "#",
     instUrl: "#",
