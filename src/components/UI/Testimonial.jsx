@@ -42,10 +42,12 @@ const Testimonial = () => {
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          Easy. We're bringing the convenience of car rental service to your
+          door step, across Africa – but starting with Lagos. driving are
+          routine activities that should be outsourced, so you can focus on the
+          things with the most impact in your life. It could be making time for
+          work that matters, or for enjoyment. You deserve to live well without
+          the extra effort.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -60,10 +62,12 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          Easy. We're bringing the convenience of car rental service to your
+          door step, across Africa – but starting with Lagos. driving are
+          routine activities that should be outsourced, so you can focus on the
+          things with the most impact in your life. It could be making time for
+          work that matters, or for enjoyment. You deserve to live well without
+          the extra effort.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -78,10 +82,12 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          Easy. We're bringing the convenience of car rental service to your
+          door step, across Africa – but starting with Lagos. driving are
+          routine activities that should be outsourced, so you can focus on the
+          things with the most impact in your life. It could be making time for
+          work that matters, or for enjoyment. You deserve to live well without
+          the extra effort.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
@@ -96,10 +102,12 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+          Easy. We're bringing the convenience of car rental service to your
+          door step, across Africa – but starting with Lagos. driving are
+          routine activities that should be outsourced, so you can focus on the
+          things with the most impact in your life. It could be making time for
+          work that matters, or for enjoyment. You deserve to live well without
+          the extra effort.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
