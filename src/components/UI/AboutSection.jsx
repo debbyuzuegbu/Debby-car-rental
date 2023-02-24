@@ -20,35 +20,39 @@ const AboutSection = ({ aboutClass }) => {
               <h4 className="section__subtitle">About Us</h4>
               <h2 className="section__title">Welcome to car rent service</h2>
               <p className="section__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum blanditiis esse accusantium dignissimos labore
-                laborum. Veniam, corporis mollitia temporibus, in quaerat vero
-                deleniti amet dolorem repudiandae, pariatur nam dolore! Impedit
-                neque sit ad temporibus quam similique dolor ipsam praesentium
-                sunt.
+                Easy. We're bringing the convenience of car rental service to
+                your door step, across Africa – but starting with Lagos. driving
+                are routine activities that should be outsourced, so you can
+                focus on the things with the most impact in your life. It could
+                be making time for work that matters, or for enjoyment. You
+                deserve to live well without the extra effort.
               </p>
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  convenience of car rental service to your door step, across
+                  Africa – but starting with Lagos.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  convenience of car rental service to your door step, across
+                  Africa – but starting with Lagos.
                 </p>
               </div>
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  convenience of car rental service to your door step, across
+                  Africa – but starting with Lagos.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
+                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  convenience of car rental service to your door step, across
+                  Africa – but starting with Lagos.
                 </p>
               </div>
             </div>
