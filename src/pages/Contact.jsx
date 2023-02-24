@@ -16,11 +16,11 @@ const socialLinks = [
     icon: "ri-instagram-line",
   },
   {
-    url: "#",
+    url: "https://www.linkedin.com/in/deborah-chinyere-uzuegbu/",
     icon: "ri-linkedin-line",
   },
   {
-    url: "#",
+    url: "https://twitter.com/debbyuzuegbu",
     icon: "ri-twitter-line",
   },
 ];
