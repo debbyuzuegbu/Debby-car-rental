@@ -26,7 +26,7 @@ const Home = () => {
     return d;
   }, []);
 
-  const getTimeLeft = () => {
+  const [offerEnds, setOfferEnds] = useState(() => {
     const diff = Math.max(0, OFFER_END - Date.now());
     return {
       days: Math.floor(diff / 86400000),
@@ -34,15 +34,22 @@ const Home = () => {
       minutes: Math.floor((diff % 3600000) / 60000),
       seconds: Math.floor((diff % 60000) / 1000),
     };
-  };
-
-  const [offerEnds, setOfferEnds] = useState(getTimeLeft);
+  });
   const [activeCategory, setActiveCategory] = useState("all");
   const [filteredCars, setFilteredCars] = useState(carData.slice(0, 6));
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => setOfferEnds(getTimeLeft()), 1000);
+    const tick = () => {
+      const diff = Math.max(0, OFFER_END - Date.now());
+      setOfferEnds({
+        days: Math.floor(diff / 86400000),
+        hours: Math.floor((diff % 86400000) / 3600000),
+        minutes: Math.floor((diff % 3600000) / 60000),
+        seconds: Math.floor((diff % 60000) / 1000),
+      });
+    };
+    const interval = setInterval(tick, 1000);
     return () => clearInterval(interval);
   }, [OFFER_END]);
 

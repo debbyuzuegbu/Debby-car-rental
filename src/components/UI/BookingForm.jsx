@@ -27,7 +27,7 @@ const validate = (fields) => {
   }
   if (!fields.phone.trim()) {
     errors.phone = "Phone number is required.";
-  } else if (!/^\+?[0-9\s\-]{7,15}$/.test(fields.phone)) {
+  } else if (!/^\+?[0-9\s-]{7,15}$/.test(fields.phone)) {
     errors.phone = "Enter a valid phone number.";
   }
   if (!fields.fromAddress.trim()) errors.fromAddress = "Pick-up address is required.";
