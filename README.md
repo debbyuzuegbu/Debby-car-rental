@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# 🚗 Debby Car Rental
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive car rental web application for booking vehicles in Lagos, Nigeria. Users can search for available cars by pickup location, destination, date, journey time, and car type — and browse featured vehicles across categories like SUV, Saloon, and more.
 
-## Available Scripts
+🔗 **Live Demo:** [debby-car-rental.vercel.app](https://debby-car-rental.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📸 Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> *(Add screenshots here)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔍 **Smart Car Search** — filter by pickup address, drop-off address, date, journey time, and car type
+- 🚘 **Featured Vehicles** — browse cars by category (All, SUV, Saloon, and more)
+- 🛎️ **Service Offerings** — City Transfer, Airport Transfer, Whole City Tour, Unlimited Miles Rental, and multiple pickup locations
+- 🔐 **User Authentication** — Login and Register functionality
+- 📞 **Request a Call** — users can request a callback directly from the site
+- 📝 **Blog & Contact pages** — informational content and a contact form
+- 📱 **Fully Responsive** — optimized for mobile, tablet, and desktop
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Built With
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (v16 or higher)
+- npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Clone the repository
+git clone https://github.com/debbyuzuegbu/Debby-car-rental.git
 
-## Learn More
+# Navigate into the project directory
+cd Debby-car-rental
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the development server
+npm start
+```
 
-### Code Splitting
+The app will run at `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+Debby-car-rental/
+├── public/
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── pages/            # Home, About, Cars, Blog, Contact
+│   ├── assets/           # Images and icons
+│   └── App.js
+├── package.json
+└── README.md
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌍 Deployment
 
-### Advanced Configuration
+This project is deployed on **Vercel**.  
+Every push to the `main` branch triggers an automatic deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 👩🏽‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Deborah Uzuegbu** — Frontend & Mobile Engineer
 
-### `npm run build` fails to minify
+[![Portfolio](https://img.shields.io/badge/Portfolio-debbyuzuegbu.com-6773E5?style=for-the-badge&logo=Google-Chrome&logoColor=white)](https://debbyuzuegbu.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Deborah_Uzuegbu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deborah-uzuegbu)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
