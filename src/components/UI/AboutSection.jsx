@@ -30,13 +30,13 @@ const AboutSection = ({ aboutClass }) => {
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  <i className="ri-checkbox-circle-line"></i> We're bringing the
                   convenience of car rental service to your door step, across
                   Africa – but starting with Lagos.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  <i className="ri-checkbox-circle-line"></i> We're bringing the
                   convenience of car rental service to your door step, across
                   Africa – but starting with Lagos.
                 </p>
@@ -44,13 +44,13 @@ const AboutSection = ({ aboutClass }) => {
 
               <div className="about__section-item d-flex align-items-center">
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  <i className="ri-checkbox-circle-line"></i> We're bringing the
                   convenience of car rental service to your door step, across
                   Africa – but starting with Lagos.
                 </p>
 
                 <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> We're bringing the
+                  <i className="ri-checkbox-circle-line"></i> We're bringing the
                   convenience of car rental service to your door step, across
                   Africa – but starting with Lagos.
                 </p>

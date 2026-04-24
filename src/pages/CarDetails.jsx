@@ -145,11 +145,15 @@ const CarDetails = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const singleCarItem = carData.find((item) => item.carName === slug);
-  
-  // Create similar cars suggestion
-  const similarCars = carData
-    .filter(item => item.carName !== slug && item.category === singleCarItem.category)
-    .slice(0, 3);
+
+  const similarCars = singleCarItem
+    ? carData
+        .filter(
+          (item) =>
+            item.carName !== slug && item.category === singleCarItem.category
+        )
+        .slice(0, 3)
+    : [];
 
   // Categories
   const categories = [
@@ -159,7 +163,29 @@ const CarDetails = () => {
     { id: "luxury", name: "Luxury", icon: "ri-vip-crown-line" }
   ];
 
-  // Car features with icons
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [singleCarItem]);
+
+  if (!singleCarItem) {
+    return (
+      <section className="py-5 text-center">
+        <Container>
+          <h3 className="text-muted mb-3">Car not found</h3>
+          <p className="text-muted mb-4">
+            The car you're looking for doesn't exist or may have been removed.
+          </p>
+          <button
+            className="btn btn-success px-4"
+            onClick={() => navigate("/cars")}
+          >
+            Browse All Cars
+          </button>
+        </Container>
+      </section>
+    );
+  }
+
   const features = [
     { icon: "ri-roadster-line", label: "Model", value: singleCarItem.model },
     { icon: "ri-settings-2-line", label: "Transmission", value: singleCarItem.automatic },
@@ -167,13 +193,9 @@ const CarDetails = () => {
     { icon: "ri-map-pin-line", label: "GPS", value: singleCarItem.gps },
     { icon: "ri-wheelchair-line", label: "Seat Type", value: singleCarItem.seatType },
     { icon: "ri-building-2-line", label: "Brand", value: singleCarItem.brand },
-    { icon: "ri-gas-station-line", label: "Fuel Type", value: singleCarItem.fuelType || "Petrol" },
+    { icon: "ri-gas-station-line", label: "Fuel Type", value: singleCarItem.fuelType },
     { icon: "ri-bluetooth-line", label: "Bluetooth", value: "Available" }
   ];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [singleCarItem]);
 
   const toggleTab = tab => {
     if (activeTab !== tab) setActiveTab(tab);

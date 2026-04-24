@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
-
-import { useParams } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import blogData from "../assets/data/blogData.js";
 import Helmet from "../components/Helmet/Helmet";
-import { Link } from "react-router-dom";
 
 import commentImg from "../assets/all-images/ava-1.jpg";
 
@@ -12,11 +10,31 @@ import "../styles/blog-details.css";
 
 const BlogDetails = () => {
   const { slug } = useParams();
-  const blog = blogData.find((blog) => blog.title === slug);
+  const navigate = useNavigate();
+  const blog = blogData.find((b) => b.title === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [blog]);
+
+  if (!blog) {
+    return (
+      <section className="py-5 text-center">
+        <Container>
+          <h3 className="text-muted mb-3">Blog post not found</h3>
+          <p className="text-muted mb-4">
+            This article doesn't exist or may have been removed.
+          </p>
+          <button
+            className="btn btn-success px-4"
+            onClick={() => navigate("/blogs")}
+          >
+            Back to Blog
+          </button>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <Helmet title={blog.title}>
@@ -25,20 +43,20 @@ const BlogDetails = () => {
           <Row>
             <Col lg="8" md="8">
               <div className="blog__details">
-                <img src={blog.imgUrl} alt="" className="w-100" />
+                <img src={blog.imgUrl} alt={blog.title} className="w-100" />
                 <h2 className="section__title mt-4">{blog.title}</h2>
 
                 <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
                   <span className="blog__author">
-                    <i class="ri-user-line"></i> {blog.author}
+                    <i className="ri-user-line"></i> {blog.author}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i class="ri-calendar-line"></i> {blog.date}
+                  <span className="d-flex align-items-center gap-1 section__description">
+                    <i className="ri-calendar-line"></i> {blog.date}
                   </span>
 
-                  <span className=" d-flex align-items-center gap-1 section__description">
-                    <i class="ri-time-line"></i> {blog.time}
+                  <span className="d-flex align-items-center gap-1 section__description">
+                    <i className="ri-time-line"></i> {blog.time}
                   </span>
                 </div>
 
@@ -53,9 +71,9 @@ const BlogDetails = () => {
                 <h4 className="mb-5">3 Comments</h4>
 
                 <div className="single__comment d-flex gap-3">
-                  <img src={commentImg} alt="" />
+                  <img src={commentImg} alt="David Visa" />
                   <div className="comment__content">
-                    <h6 className=" fw-bold">David Visa</h6>
+                    <h6 className="fw-bold">David Visa</h6>
                     <p className="section__description mb-0">14 July, 2022</p>
                     <p className="section__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,12 +82,11 @@ const BlogDetails = () => {
                     </p>
 
                     <span className="replay d-flex align-items-center gap-1">
-                      <i class="ri-reply-line"></i> Replay
+                      <i className="ri-reply-line"></i> Reply
                     </span>
                   </div>
                 </div>
 
-                {/* =============== comment form ============ */}
                 <div className="leave__comment-form mt-5">
                   <h4>Leave a Comment</h4>
                   <p className="section__description">
@@ -77,9 +94,9 @@ const BlogDetails = () => {
                   </p>
 
                   <Form>
-                    <FormGroup className=" d-flex gap-3">
-                      <Input type="text" placeholder="Full name" />
-                      <Input type="email" placeholder="Email" />
+                    <FormGroup className="d-flex gap-3">
+                      <Input type="text" placeholder="Full name" aria-label="Full name" />
+                      <Input type="email" placeholder="Email" aria-label="Email" />
                     </FormGroup>
 
                     <FormGroup>
@@ -87,6 +104,7 @@ const BlogDetails = () => {
                         rows="5"
                         className="w-100 py-2 px-3"
                         placeholder="Comment..."
+                        aria-label="Comment"
                       ></textarea>
                     </FormGroup>
 
@@ -100,14 +118,19 @@ const BlogDetails = () => {
 
             <Col lg="4" md="4">
               <div className="recent__post mb-4">
-                <h5 className=" fw-bold">Recent Posts</h5>
+                <h5 className="fw-bold">Recent Posts</h5>
               </div>
               {blogData.map((item) => (
                 <div className="recent__blog-post mb-4" key={item.id}>
                   <div className="recent__blog-item d-flex gap-3">
-                    <img src={item.imgUrl} alt="" className="w-25 rounded-2" />
+                    <img
+                      src={item.imgUrl}
+                      alt={item.title}
+                      className="w-25 rounded-2"
+                      loading="lazy"
+                    />
                     <h6>
-                      <Link to={`/blogs/${item.title}`}>{blog.title}</Link>
+                      <Link to={`/blogs/${item.title}`}>{item.title}</Link>
                     </h6>
                   </div>
                 </div>
